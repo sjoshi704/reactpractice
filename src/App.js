@@ -19,6 +19,7 @@ function App() {
         </a>
       </header> */}
       <h1 className='heading'><i> Welcome To React</i> </h1>
+      <p> This is App component</p>
     </div>
   );
 }
