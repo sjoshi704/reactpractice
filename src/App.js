@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Counter } from './counter/counter';
 
 function App() {
   return (
@@ -20,6 +21,12 @@ function App() {
       </header> */}
       <h1 className='heading'><i> Welcome To React</i> </h1>
       <p> This is App component.</p>
+      <hr></hr>
+
+     <h5><Counter name="Sam" greetings="Hello"></Counter> </h5>
+     
+     <h5><Counter name="100Rabh" surname="Joshi"></Counter> </h5>
+  
     </div>
   );
 }
