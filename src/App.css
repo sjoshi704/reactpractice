@@ -40,3 +40,8 @@
 .decrementBtn{
   margin-left: 20px;
 }
+
+.align{
+  /* display: flex; */
+  width: 100%;
+}

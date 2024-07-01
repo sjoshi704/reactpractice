@@ -2,9 +2,13 @@ import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { Counter } from "./counter/counter";
-import { Greetings } from "./Greeting";
-import { Flag } from "./flag/flag";
+// import { Counter } from "./counter/counter";
+// import { Greetings } from "./Greeting";
+// import { Flag } from "./flag/flag";
+// import { ConditinalFlag } from "./flag/conditionalFlagTrueFalse";
+import { UserProfile } from "./UserProfile/userProfile";
+// import { ToDoLists } from "./ToDoLists/ToDoLists";
+import { UserList } from "./UserProfile/UserList";
 
 function App() {
   return (
@@ -23,7 +27,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <p> This is App component.</p>
+      {/* <p> This is App component.</p>
       <h1 className="heading">
         <i> Welcome To React</i>{" "}
       </h1>
@@ -39,9 +43,21 @@ function App() {
       </h5>
       <hr></hr>
       {/* <h5><Counter counterName="Counter2"> </Counter> </h5> */}
-      <hr></hr>
+      {/* <hr></hr>
       <p> This is Flag Component</p>
       <Flag> </Flag>
+
+      <hr></hr>
+      <ConditinalFlag> </ConditinalFlag> */}
+      {/* <hr></hr> */}
+
+      <UserProfile> </UserProfile>
+      {/* <hr></hr>*/}
+
+      {/* <ToDoLists> </ToDoLists> */}
+      <hr></hr> 
+      <UserList> </UserList>
+      <hr></hr>
     </div>
   );
 }
