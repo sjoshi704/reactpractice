@@ -7,9 +7,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 // import { Flag } from "./flag/flag";
 // import { ConditinalFlag } from "./flag/conditionalFlagTrueFalse";
 // import { UserProfile } from "./UserProfile/userProfile";
-// import { ToDoLists } from "./ToDoLists/ToDoLists";
+import { ToDoLists } from "./ToDoLists/ToDoLists";
 import { UserList } from "./UserProfile/UserList";
-import { MultipleFormInputs } from "./UserProfile/MultipleFormInputs";
+
 
 function App() {
   return (
@@ -57,9 +57,8 @@ function App() {
 
       {/* <ToDoLists> </ToDoLists> */}
       <hr></hr> 
-      {/* <UserList> </UserList> */}
+      <UserList> </UserList>
       {/* <hr></hr> */}
-      <MultipleFormInputs> </MultipleFormInputs>
     </div>
   );
 }

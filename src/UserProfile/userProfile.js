@@ -16,11 +16,11 @@ export function UserProfile(user){
   {/* <h3 className="text-danger">  User Profile</h3> */}
   <hr></hr>
 
-  <p>FullName: <span class="text-success h5"> {user.firstName} {user.lastName}</span></p>
-  <p> Address:<span class="text-success h5">{user.Address}</span></p>
+  <p>FullName: <span className="text-success h5"> {user.firstName} {user.lastName}</span></p>
+  <p> Address:<span className="text-success h5">{user.address}</span></p>
   {/* {user.isAdmin && <p> Gender:<span class="text-success h5">{user.Gender} </span></p>} */}
-  <p>{user.isAdmin ?"I am Admin":"I am Not Admin"}</p>
-  <p> Admin:<span class="text-success h5">{user.isAdmin ? "Yes":"No"}</span></p>
+  {/* <p>{user.isAdmin ?"I am Admin":"I am Not Admin"}</p> */}
+  {/* <p> Admin:<span class="text-success h5">{user.isAdmin ? "Yes":"No"}</span></p> */}
 
 </div>
   
