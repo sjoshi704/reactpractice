@@ -2,13 +2,15 @@ import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 // import { Counter } from "./counter/counter";
 // import { Greetings } from "./Greeting";
 // import { Flag } from "./flag/flag";
 // import { ConditinalFlag } from "./flag/conditionalFlagTrueFalse";
 // import { UserProfile } from "./UserProfile/userProfile";
-import { ToDoLists } from "./ToDoLists/ToDoLists";
-import { UserList } from "./UserProfile/UserList";
+// import { ToDoLists } from "./ToDoLists/ToDoLists";
+// import { UserList } from "./UserProfile/UserList";
+import {FormHandling} from "./FormHandling/FormHandling";
 
 
 function App() {
@@ -57,8 +59,9 @@ function App() {
 
       {/* <ToDoLists> </ToDoLists> */}
       <hr></hr> 
-      <UserList> </UserList>
+      {/* <UserList> </UserList> */}
       {/* <hr></hr> */}
+      <FormHandling> </FormHandling>
     </div>
   );
 }
