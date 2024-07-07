@@ -1,8 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+// import StockAvailability from "./StockAvailability";
+
 // import { Counter } from "./counter/counter";
 // import { Greetings } from "./Greeting";
 // import { Flag } from "./flag/flag";
@@ -10,7 +12,11 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 // import { UserProfile } from "./UserProfile/userProfile";
 // import { ToDoLists } from "./ToDoLists/ToDoLists";
 // import { UserList } from "./UserProfile/UserList";
-import {FormHandling} from "./FormHandling/FormHandling";
+// import {FormHandling} from "./FormHandling/FormHandling";
+// import {FormikLibraryFormHandling} from "./FormHandling/FormikLibraryFormHandling";
+import { ImageCourosel } from "./ImageCourosel/ImageCourosel";
+
+
 
 
 function App() {
@@ -61,7 +67,16 @@ function App() {
       <hr></hr> 
       {/* <UserList> </UserList> */}
       {/* <hr></hr> */}
-      <FormHandling> </FormHandling>
+      {/* <FormHandling> </FormHandling> */}
+      <hr></hr>
+      {/* <FormikLibraryFormHandling> </FormikLibraryFormHandling> */}
+      <hr></hr>
+      {/* <ImageCourosel> </ImageCourosel> */}
+      <hr></hr>
+      {/* <StockAvailability> </StockAvailability> */}
+      <hr></hr>
+      
+
     </div>
   );
 }
