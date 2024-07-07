@@ -10,7 +10,7 @@ export function EmployeeListForm() {
     ]);
 
     return <>
-        <div className='conitainer'>
+        <div className='container-fluid'>
             <h1 className='h3 text-center text-success'> Employee List</h1>
             <div className='row'>
                 <div className='card card-body'>

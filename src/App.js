@@ -16,6 +16,7 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 // import {FormikLibraryFormHandling} from "./FormHandling/FormikLibraryFormHandling";
 import { ImageCourosel } from "./ImageCourosel/ImageCourosel";
 import { EmployeeListForm } from "./FormHandling/EmployeeListForm";
+import { CrudOperations } from "./CRUD/CrudOperations";
 
 
 
@@ -76,8 +77,10 @@ function App() {
       {/* <hr></hr> */}
       {/* <StockAvailability> </StockAvailability> */}
       {/* <hr></hr> */}
-      <EmployeeListForm> </EmployeeListForm>
-      <hr></hr>
+      {/* <EmployeeListForm> </EmployeeListForm>
+      <hr></hr> */}
+      <CrudOperations> </CrudOperations>
+       <hr></hr>
 
 
     </div>
