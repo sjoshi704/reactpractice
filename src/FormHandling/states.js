@@ -37,3 +37,28 @@ export const indianStates = [
     "Jammu and Kashmir"
   ];
   
+
+  export const technologies=[
+      "React.js",
+      "Angular",
+      "Vue.js",
+      "Node.js",
+      "Express.js",
+      "Flask",
+      "Laravel",
+      "ASP.NET",
+      "jQuery",
+      "Bootstrap",
+      "Tailwind CSS",
+      "Material-UI",
+      "Sass",
+      "REST API",
+      "Babel",
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "Java",
+      "PHP",
+
+    
+  ]
