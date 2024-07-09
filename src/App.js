@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 // import StockAvailability from "./StockAvailability";
-
 // import { Counter } from "./counter/counter";
 // import { Greetings } from "./Greeting";
 // import { Flag } from "./flag/flag";
@@ -14,8 +13,8 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 // import { UserList } from "./UserProfile/UserList";
 // import {FormHandling} from "./FormHandling/FormHandling";
 // import {FormikLibraryFormHandling} from "./FormHandling/FormikLibraryFormHandling";
-import { ImageCourosel } from "./ImageCourosel/ImageCourosel";
-import { EmployeeListForm } from "./FormHandling/EmployeeListForm";
+// import { ImageCourosel } from "./ImageCourosel/ImageCourosel";
+// import { EmployeeListForm } from "./FormHandling/EmployeeListForm";
 import { CrudOperations } from "./CRUD/CrudOperations";
 
 
@@ -72,15 +71,15 @@ function App() {
       {/* <FormHandling> </FormHandling> */}
       {/* <hr></hr> */}
       {/* <FormikLibraryFormHandling> </FormikLibraryFormHandling> */}
-      {/* <hr></hr> */}
+      <hr></hr>
       {/* <ImageCourosel> </ImageCourosel> */}
-      {/* <hr></hr> */}
+      <hr></hr>
       {/* <StockAvailability> </StockAvailability> */}
       {/* <hr></hr> */}
       {/* <EmployeeListForm> </EmployeeListForm>
       <hr></hr> */}
       <CrudOperations> </CrudOperations>
-       <hr></hr>
+       {/* <hr></hr> */}
 
 
     </div>

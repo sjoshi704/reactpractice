@@ -3,21 +3,24 @@ import { indianStates } from "../FormHandling/states";
 import "../App.css";
 
 
-export function StudentForm({formSubmit}) {
+export function StudentForm({student,formSubmit}) {
     return<>
 
 <div className="card card-body">
-                <Formik initialValues={{
-                    fname: '',
-                    lastname: '',
-                    email: '',
-                    ContactNo: '',
-                    address: '',
-                    state: '',
+                <Formik 
+                enableReinitialize={true}
+                initialValues={{
+                    fname:student?.fname || '',
+                    lastname:student?.lastname || '',
+                    email: student?.email || '',
+                    ContactNo: student?.ContactNo || '',
+                    address: student?.address || '',
+                    state: student?.state || '',
                 }}
                     onSubmit={(value, { resetForm }) => {
                         console.log(value);
-                        formSubmit(value, {resetForm})  
+                        formSubmit(value,student?.id ,{resetForm})  
+                        
                     }}
                 >
                     <Form>

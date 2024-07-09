@@ -1,6 +1,6 @@
 
 
-export function StudentsTable({studentList,onDelete}){
+export function StudentsTable({studentList,onDelete,OnStudentUpdate}){
     return <>
     
     
@@ -27,7 +27,9 @@ export function StudentsTable({studentList,onDelete}){
                                     <td> {student.email}</td>
                                     <td> {student.ContactNo}</td>
                                     <td> {student.state}</td>
-                                    <td> <button className="btn btn-secondary mr-2"> Update </button>
+                                    <td> <button className="btn btn-secondary mr-2" onClick={()=>{
+                                        OnStudentUpdate(student)
+                                    }}> Update </button>
                                          <button className="btn btn-danger dltBtn" onClick={()=>onDelete(student.id)}> Delete</button>
                                     </td>
 
