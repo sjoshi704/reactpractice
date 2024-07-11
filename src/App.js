@@ -16,6 +16,7 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 // import { ImageCourosel } from "./ImageCourosel/ImageCourosel";
 // import { EmployeeListForm } from "./FormHandling/EmployeeListForm";
 import { CrudOperations } from "./CRUD/CrudOperations";
+import TicTacToe from "./TicTacToe/TicTacToe";
 
 
 
@@ -71,15 +72,17 @@ function App() {
       {/* <FormHandling> </FormHandling> */}
       {/* <hr></hr> */}
       {/* <FormikLibraryFormHandling> </FormikLibraryFormHandling> */}
-      <hr></hr>
+      {/* <hr></hr> */}
       {/* <ImageCourosel> </ImageCourosel> */}
-      <hr></hr>
+      {/* <hr></hr> */}
       {/* <StockAvailability> </StockAvailability> */}
       {/* <hr></hr> */}
       {/* <EmployeeListForm> </EmployeeListForm>
       <hr></hr> */}
-      <CrudOperations> </CrudOperations>
+      {/* <CrudOperations> </CrudOperations> */}
        {/* <hr></hr> */}
+       <TicTacToe></TicTacToe>
+          {/* <hr></hr> */}
 
 
     </div>
