@@ -19,6 +19,8 @@ import { CrudOperations } from "./CRUD/CrudOperations";
 import TicTacToe from "./TicTacToe/TicTacToe";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { UseRefExample } from "../src/USeRefHook/UseRefExample";
+import UseMemoHook from "./UseMemoHook/UseMemoHook";
+import UseCallbackHook from "./UseCallbackHook/UseCallbackHook";
 
 
 
@@ -118,8 +120,11 @@ function App() {
       {/* <CrudOperations> </CrudOperations> */}
       {/* <hr></hr> */}
       {/* <TicTacToe></TicTacToe> */}
-      {/* <hr></hr> */}
-      <UseRefExample> </UseRefExample>
+      {/* <hr></h/r> */}
+      {/* <UseRefExample> </UseRefExample> */}
+      {/* <hr/> */}
+      {/* <UseMemoHook> </UseMemoHook> */}
+<UseCallbackHook> </UseCallbackHook>
 
 
     </div>
