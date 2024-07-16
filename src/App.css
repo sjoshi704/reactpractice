@@ -57,3 +57,18 @@
 .card{
 background-color: rgb(189, 243, 245);
 }
+.Header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(194, 119, 119)
+}
+.container-body{
+display: flex;
+}
+.side-Bar{
+  width: 400px;
+  height: 100vh;
+  background-color:aliceblue
+}
