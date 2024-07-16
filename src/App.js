@@ -18,6 +18,7 @@ import { EmployeeListForm } from "./FormHandling/EmployeeListForm";
 import { CrudOperations } from "./CRUD/CrudOperations";
 import TicTacToe from "./TicTacToe/TicTacToe";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { UseRefExample } from "../src/USeRefHook/UseRefExample";
 
 
 
@@ -27,25 +28,25 @@ function App() {
   return (
     <div className="App">
 
-      <div className="Header  text-white">
+      {/* <div className="Header  text-white">
         <h2> App Component</h2>
-      </div>
-      <div className="container-body">
-        <div className="side-Bar">
-          <Link to={"/"}> <h5 className="text-center text-danger"> Home</h5></Link>
-          <br />
-          <Link to={"/counter"}><h5 className="text-center text-danger"> Counter </h5></Link>
-          <br />
+      </div> */}
+      {/* <div className="container-body"> */}
+        {/* <div className="side-Bar"> */}
+          {/* <Link to={"/"}> <h5 className="text-center text-danger"> Home</h5></Link> */}
+          {/* <br /> */}
+          {/* <Link to={"/counter"}><h5 className="text-center text-danger"> Counter </h5></Link> */}
+          {/* <br /> */}
           {/* <Link to={"/greeting"}><h5 className="text-center text-danger"> Greeting </h5></Link> */}
-          <button className="btn btn-danger" onClick={() => {
-            navigate("/greeting");
-          }}> Greeting </button>
-          <br />    <br />
-          <button className="btn btn-success" onClick={() => {
-            navigate("/students");
-          }}> Students </button>
-        </div>
-        <div className="Content">
+          {/* <button className="btn btn-danger" onClick={() => { */}
+            {/* // navigate("/greeting"); */}
+          {/* // }}> Greeting </button> */}
+          {/* <br />    <br /> */}
+          {/* <button className="btn btn-success" onClick={() => { */}
+            {/* navigate("/students"); */}
+          {/* // }}> Students </button> */}
+        {/* // </div> */}
+        {/* <div className="Content">
           <Routes>
             <Route path="/counter" element={<div><Counter> </Counter> </div>} />
             <Route path="/greeting" element={<div><Greetings name="Saurabh" greetings="Hello Good Morning"> </Greetings> </div>} />
@@ -55,11 +56,10 @@ function App() {
 
           </Routes>
 
-        </div>
+        </div> */}
 
 
 
-      </div>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -119,6 +119,7 @@ function App() {
       {/* <hr></hr> */}
       {/* <TicTacToe></TicTacToe> */}
       {/* <hr></hr> */}
+      <UseRefExample> </UseRefExample>
 
 
     </div>
