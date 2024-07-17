@@ -25,6 +25,7 @@ import { AppContext, ContextProvider } from "./Hooks/UseContextHook/AppContext";
 import Profile from "./Hooks/UseContextHook/Profile";
 import Contact from "./Hooks/UseContextHook/Contact";
 import Footer from "./Hooks/UseContextHook/Footer";
+import { UseReducerHook } from "./Hooks/UseReducerHook/UseReducerHook";
 
 
 
@@ -129,10 +130,12 @@ function App() {
       {/* <hr/> */}
       {/* <UseMemoHook> </UseMemoHook> */}
       {/* <UseCallbackHook> </UseCallbackHook> */}
-      <ContextProvider>
+      {/* <ContextProvider>
         <Profile></Profile>
  
-      </ContextProvider>
+      </ContextProvider> */}
+
+      <UseReducerHook> </UseReducerHook>
 
     </div>
   );
