@@ -22,6 +22,9 @@ import { UseRefExample } from "./Hooks/USeRefHook/UseRefExample";
 import UseMemoHook from "./Hooks/UseMemoHook/UseMemoHook";
 import UseCallbackHook from "./Hooks/UseCallbackHook/UseCallbackHook";
 import { AppContext, ContextProvider } from "./Hooks/UseContextHook/AppContext";
+import Profile from "./Hooks/UseContextHook/Profile";
+import Contact from "./Hooks/UseContextHook/Contact";
+import Footer from "./Hooks/UseContextHook/Footer";
 
 
 
@@ -127,7 +130,8 @@ function App() {
       {/* <UseMemoHook> </UseMemoHook> */}
       {/* <UseCallbackHook> </UseCallbackHook> */}
       <ContextProvider>
-
+        <Profile></Profile>
+ 
       </ContextProvider>
 
     </div>
