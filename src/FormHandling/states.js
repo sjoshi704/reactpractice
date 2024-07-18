@@ -35,30 +35,32 @@ export const indianStates = [
     "Puducherry",
     "Ladakh",
     "Jammu and Kashmir"
-  ];
-  
+];
 
-  export const technologies=[
-      "React.js",
-      "Angular",
-      "Vue.js",
-      "Node.js",
-      "Express.js",
-      "Flask",
-      "Laravel",
-      "ASP.NET",
-      "jQuery",
-      "Bootstrap",
-      "Tailwind CSS",
-      "Material-UI",
-      "Sass",
-      "REST API",
-      "Babel",
-      "TypeScript",
-      "JavaScript",
-      "Python",
-      "Java",
-      "PHP",
 
-    
-  ]
+export const technologies = [
+    "React.js",
+    "Angular",
+    "Vue.js",
+    "Node.js",
+    "Express.js",
+    "Flask",
+    "Laravel",
+    "ASP.NET",
+    "jQuery",
+    "Bootstrap",
+    "Tailwind CSS",
+    "Material-UI",
+    "Sass",
+    "REST API",
+    "Babel",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Java",
+    "PHP",
+]
+
+export const indianCities = [
+    "Mumbai", "Delhi", "Bangluru", "Pune", "Hyderbad", "Jaipur", "Patna", "Delhi", "Indore", "Nagpur"
+]

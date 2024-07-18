@@ -26,6 +26,7 @@ import Profile from "./Hooks/UseContextHook/Profile";
 import Contact from "./Hooks/UseContextHook/Contact";
 import Footer from "./Hooks/UseContextHook/Footer";
 import { UseReducerHook } from "./Hooks/UseReducerHook/UseReducerHook";
+import FormUseReducerExample from "./Hooks/UseReducerHook/FormUseReducerExample";
 
 
 
@@ -135,8 +136,9 @@ function App() {
  
       </ContextProvider> */}
 
-      <UseReducerHook> </UseReducerHook>
+      {/* <UseReducerHook> </UseReducerHook> */}
 
+      <FormUseReducerExample></FormUseReducerExample>
     </div>
   );
 }
