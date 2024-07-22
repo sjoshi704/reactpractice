@@ -29,12 +29,13 @@ const FormUseReducerExample = () => {
   // Use useReducer hook to manage state and dispatch function
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  // Function to handle changes in form fields
-  const handleChange = (field, value) => {
-    dispatch({ type: 'SET_FIELD', field, value });
+  // Function to handle form submission
+  const handleSubmit = (values) => {
+    alert(JSON.stringify(values));
+    console.log(values);
   };
 
-  // Define your form validation schema (optional)
+  // Define your form validation schema
   const validationSchema = yup.object({
     fname: yup.string().min(4, "Name too short").max(10, "Name too long").required("First Name Required"),
     lname: yup.string().min(4, "Name too short").max(10, "Name too long").required("Last Name Required"),
@@ -42,12 +43,6 @@ const FormUseReducerExample = () => {
     address: yup.string().min(4, "Address too short").max(10, "Address too long").required("Address Required"),
     city: yup.string().required("City is required"),
   });
-
-  // Function to handle form submission
-  const handleSubmit = (values) => {
-    alert(JSON.stringify(values));
-    console.log(values);
-  };
 
   return (
     <div className='container-fluid'>
@@ -59,50 +54,103 @@ const FormUseReducerExample = () => {
         initialValues={state}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
+        enableReinitialize
       >
-        <Form>
-          <div className="row">
-            <div className="col-md-3">
-              <label htmlFor="fname">First Name</label> <span className="text-danger">*</span>
-              <Field type="text" className="form-control" id="fname" name="fname" onChange={(e) => handleChange('fname', e.target.value)} />
-              <ErrorMessage name="fname" component="div" className="text-danger" />
-            </div>
-            <div className="col-md-3">
-              <label htmlFor="lname">Last Name</label> <span className="text-danger">*</span>
-              <Field type="text" className="form-control" id="lname" name="lname" onChange={(e) => handleChange('lname', e.target.value)} />
-              <ErrorMessage name="lname" component="div" className="text-danger" />
-            </div>
-
-            <div className="col-md-3">
-              <label htmlFor="ContactNo">Contact Number</label> <span className="text-danger">*</span>
-              <Field type="text" className="form-control" id="ContactNo" name="ContactNo" onChange={(e) => handleChange('ContactNo', e.target.value)} />
-              <ErrorMessage name="ContactNo" component="div" className="text-danger" />
-            </div>
-
-            <div className="col-md-3">
-              <label htmlFor="address">Address </label> <span className="text-danger">*</span>
-              <Field type="text" className="form-control" id="address" name="address" onChange={(e) => handleChange('address', e.target.value)} />
-              <ErrorMessage name="address" component="div" className="text-danger" />
-            </div>
-            <div className="col-md-3">
-              <label htmlFor="city">Select City </label>
-              <Field as="select" className="form-control" id="city" name="city" onChange={(e) => handleChange('city', e.target.value)} >
-                <option value="" disabled> Select City</option>
-                {
-                  indianCities.map((city, index) => {
-                    return <option value={city} key={index}> {city}</option>
-                  })
-                }
-              </Field>
-              <ErrorMessage name="city" component="div" className="text-danger" />
-            </div>
-            <div className="d-flex justify-content-end">
+        {({ setFieldValue, values }) => (
+          <Form>
+            <div className="row">
               <div className="col-md-3">
-                <button type="submit" className="btn btn-danger">Submit</button>
+                <label htmlFor="fname">First Name</label> <span className="text-danger">*</span>
+                <Field 
+                  type="text" 
+                  className="form-control" 
+                  id="fname" 
+                  name="fname" 
+                  value={values.fname} 
+                  onChange={(e) => {
+                    setFieldValue('fname', e.target.value);
+                    dispatch({ type: 'SET_FIELD', field: 'fname', value: e.target.value });
+                  }} 
+                />
+                <ErrorMessage name="fname" component="div" className="text-danger" />
+              </div>
+              <div className="col-md-3">
+                <label htmlFor="lname">Last Name</label> <span className="text-danger">*</span>
+                <Field 
+                  type="text" 
+                  className="form-control" 
+                  id="lname" 
+                  name="lname" 
+                  value={values.lname} 
+                  onChange={(e) => {
+                    setFieldValue('lname', e.target.value);
+                    dispatch({ type: 'SET_FIELD', field: 'lname', value: e.target.value });
+                  }} 
+                />
+                <ErrorMessage name="lname" component="div" className="text-danger" />
+              </div>
+
+              <div className="col-md-3">
+                <label htmlFor="ContactNo">Contact Number</label> <span className="text-danger">*</span>
+                <Field 
+                  type="text" 
+                  className="form-control" 
+                  id="ContactNo" 
+                  name="ContactNo" 
+                  value={values.ContactNo} 
+                  onChange={(e) => {
+                    setFieldValue('ContactNo', e.target.value);
+                    dispatch({ type: 'SET_FIELD', field: 'ContactNo', value: e.target.value });
+                  }} 
+                />
+                <ErrorMessage name="ContactNo" component="div" className="text-danger" />
+              </div>
+
+              <div className="col-md-3">
+                <label htmlFor="address">Address </label> <span className="text-danger">*</span>
+                <Field 
+                  type="text" 
+                  className="form-control" 
+                  id="address" 
+                  name="address" 
+                  value={values.address} 
+                  onChange={(e) => {
+                    setFieldValue('address', e.target.value);
+                    dispatch({ type: 'SET_FIELD', field: 'address', value: e.target.value });
+                  }} 
+                />
+                <ErrorMessage name="address" component="div" className="text-danger" />
+              </div>
+              <div className="col-md-3">
+                <label htmlFor="city">Select City </label>
+                <Field 
+                  as="select" 
+                  className="form-control" 
+                  id="city" 
+                  name="city" 
+                  value={values.city} 
+                  onChange={(e) => {
+                    setFieldValue('city', e.target.value);
+                    dispatch({ type: 'SET_FIELD', field: 'city', value: e.target.value });
+                  }} 
+                >
+                  <option value="" disabled> Select City</option>
+                  {
+                    indianCities.map((city, index) => (
+                      <option value={city} key={index}>{city}</option>
+                    ))
+                  }
+                </Field>
+                <ErrorMessage name="city" component="div" className="text-danger" />
+              </div>
+              <div className="d-flex justify-content-end">
+                <div className="col-md-3">
+                  <button type="submit" className="btn btn-danger">Submit</button>
+                </div>
               </div>
             </div>
-          </div>
-        </Form>
+          </Form>
+        )}
       </Formik>
     </div>
   );
