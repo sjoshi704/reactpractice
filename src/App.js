@@ -27,6 +27,7 @@ import Contact from "./Hooks/UseContextHook/Contact";
 import Footer from "./Hooks/UseContextHook/Footer";
 import { UseReducerHook } from "./Hooks/UseReducerHook/UseReducerHook";
 import FormUseReducerExample from "./Hooks/UseReducerHook/FormUseReducerExample";
+import ReduxStoreExample from "./Redux/ReduxStoreExample";
 
 
 
@@ -36,39 +37,46 @@ function App() {
   return (
     <div className="App">
 
-      {/* <div className="Header  text-white">
+      <div className="Header  text-white">
         <h2> App Component</h2>
-      </div> */}
-      {/* <div className="container-body"> */}
-      {/* <div className="side-Bar"> */}
-      {/* <Link to={"/"}> <h5 className="text-center text-danger"> Home</h5></Link> */}
-      {/* <br /> */}
-      {/* <Link to={"/counter"}><h5 className="text-center text-danger"> Counter </h5></Link> */}
-      {/* <br /> */}
-      {/* <Link to={"/greeting"}><h5 className="text-center text-danger"> Greeting </h5></Link> */}
-      {/* <button className="btn btn-danger" onClick={() => { */}
-      {/* // navigate("/greeting"); */}
-      {/* // }}> Greeting </button> */}
-      {/* <br />    <br /> */}
-      {/* <button className="btn btn-success" onClick={() => { */}
-      {/* navigate("/students"); */}
-      {/* // }}> Students </button> */}
-      {/* // </div> */}
-      {/* <div className="Content">
+      </div>
+
+      <div className="container-body">
+        <div className="side-Bar">
+          <Link to={"/"}> <h5 className="text-center text-danger"> Home</h5></Link>
+          <br />
+          <Link to={"/counter"}><h5 className="text-center text-danger"> Counter </h5></Link>
+          <br />
+          <Link to={"/greeting"}><h5 className="text-center text-danger"> Greeting </h5></Link>
+          <button className="btn btn-danger" onClick={() => {
+            navigate("/greeting");
+          }}> Greeting </button>
+          <br />    <br />
+          <button className="btn btn-success" onClick={() => {
+            navigate("/students");
+          }}> Students </button>
+          <br />    <br />
+          <button className="btn btn-warning" onClick={() => {
+            navigate("/redux-example");
+          }}> Redux </button>
+        </div>
+
+
+        <div className="Content">
           <Routes>
             <Route path="/counter" element={<div><Counter> </Counter> </div>} />
             <Route path="/greeting" element={<div><Greetings name="Saurabh" greetings="Hello Good Morning"> </Greetings> </div>} />
             <Route path="*" element={"This Url is not Mapped"} />
             <Route path="/students/*" element={<div> <CrudOperations></CrudOperations></div>} />
-
+            <Route path="redux-example" element={<ReduxStoreExample> </ReduxStoreExample>} />
 
           </Routes>
 
-        </div> */}
+        </div>
 
 
 
-      {/* <header className="App-header">
+        {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -82,7 +90,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      {/* <p> This is App component.</p>
+        {/* <p> This is App component.</p>
       <h1 className="heading">
         <i> Welcome To React</i>{" "}
       </h1>
@@ -98,47 +106,62 @@ function App() {
       </h5>
       <hr></hr>
       {/* <h5><Counter counterName="Counter2"> </Counter> </h5> */}
-      {/* <hr></hr>
+        {/* <hr></hr>
       <p> This is Flag Component</p>
       <Flag> </Flag>
 
       <hr></hr>
       <ConditinalFlag> </ConditinalFlag> */}
-      {/* <hr></hr> */}
+        {/* <hr></hr> */}
 
-      {/* <UserProfile> </UserProfile> */}
-      {/* <hr></hr>*/}
+        {/* <UserProfile> </UserProfile> */}
+        {/* <hr></hr>*/}
 
-      {/* <ToDoLists> </ToDoLists> */}
-      {/* <hr></hr>  */}
-      {/* <UserList> </UserList> */}
-      {/* <hr></hr> */}
-      {/* <FormHandling> </FormHandling> */}
-      {/* <hr></hr> */}
-      {/* <FormikLibraryFormHandling> </FormikLibraryFormHandling> */}
-      {/* <hr></hr> */}
-      {/* <ImageCourosel> </ImageCourosel> */}
-      {/* <hr></hr> */}
-      {/* <StockAvailability> </StockAvailability> */}
-      {/* <hr></hr> */}
-      {/* <EmployeeListForm> </EmployeeListForm>
+        {/* <ToDoLists> </ToDoLists> */}
+        {/* <hr></hr>  */}
+
+        {/* <UserList> </UserList> */}
+        {/* <hr></hr> */}
+
+        {/* <FormHandling> </FormHandling> */}
+        {/* <hr></hr> */}
+
+        {/* <FormikLibraryFormHandling> </FormikLibraryFormHandling> */}
+        {/* <hr></hr> */}
+
+        {/* <ImageCourosel> </ImageCourosel> */}
+        {/* <hr></hr> */}
+
+        {/* <StockAvailability> </StockAvailability> */}
+        {/* <hr></hr> */}
+
+        {/* <EmployeeListForm> </EmployeeListForm>
       <hr></hr> */}
-      {/* <CrudOperations> </CrudOperations> */}
-      {/* <hr></hr> */}
-      {/* <TicTacToe></TicTacToe> */}
-      {/* <hr></h/r> */}
-      {/* <UseRefExample> </UseRefExample> */}
-      {/* <hr/> */}
-      {/* <UseMemoHook> </UseMemoHook> */}
-      {/* <UseCallbackHook> </UseCallbackHook> */}
-      {/* <ContextProvider>
+
+        {/* <CrudOperations> </CrudOperations> */}
+        {/* <hr></hr> */}
+
+        {/* <TicTacToe></TicTacToe> */}
+        {/* <hr></h/r> */}
+
+        {/* <UseRefExample> </UseRefExample> */}
+        {/* <hr/> */}
+
+        {/* <UseMemoHook> </UseMemoHook> */}
+
+        {/* <UseCallbackHook> </UseCallbackHook> */}
+
+        {/* <ContextProvider>
         <Profile></Profile>
  
       </ContextProvider> */}
 
-      {/* <UseReducerHook> </UseReducerHook> */}
+        {/* <UseReducerHook> </UseReducerHook> */}
 
-      <FormUseReducerExample></FormUseReducerExample>
+        {/* <FormUseReducerExample></FormUseReducerExample> */}
+
+        {/* <ReduxStoreExample> </ReduxStoreExample> */}
+      </div>
     </div>
   );
 }
