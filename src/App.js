@@ -29,6 +29,7 @@ import { UseReducerHook } from "./Hooks/UseReducerHook/UseReducerHook";
 import FormUseReducerExample from "./Hooks/UseReducerHook/FormUseReducerExample";
 import ReduxStoreExample from "./Redux/ReduxStoreExample";
 import CustomHook from "./CUSTOM-HOOKS/CustomHook";
+import { AuthinticatedExampleComponent } from "./HOC/HocExample";
 
 
 
@@ -64,6 +65,10 @@ function App() {
           <button className="btn btn-primary" onClick={() => {
             navigate("/custom-hook");
           }}> Custom Hook </button>
+           <br />    <br />
+          <button className="btn btn-primary" onClick={() => {
+            navigate("/hoc");
+          }}> HOC </button>
         </div>
 
 
@@ -75,7 +80,7 @@ function App() {
             <Route path="/students/*" element={<div> <CrudOperations></CrudOperations></div>} />
             <Route path="redux-example" element={<ReduxStoreExample> </ReduxStoreExample>} />
             <Route path="custom-hook" element={<CustomHook> </CustomHook>} />
-
+            <Route path="hoc" element={<AuthinticatedExampleComponent> </AuthinticatedExampleComponent>} />
           </Routes>
 
         </div>
