@@ -28,6 +28,7 @@ import Footer from "./Hooks/UseContextHook/Footer";
 import { UseReducerHook } from "./Hooks/UseReducerHook/UseReducerHook";
 import FormUseReducerExample from "./Hooks/UseReducerHook/FormUseReducerExample";
 import ReduxStoreExample from "./Redux/ReduxStoreExample";
+import CustomHook from "./CUSTOM-HOOKS/CustomHook";
 
 
 
@@ -59,6 +60,10 @@ function App() {
           <button className="btn btn-warning" onClick={() => {
             navigate("/redux-example");
           }}> Redux </button>
+        <br />    <br />
+          <button className="btn btn-primary" onClick={() => {
+            navigate("/custom-hook");
+          }}> Custom Hook </button>
         </div>
 
 
@@ -69,6 +74,7 @@ function App() {
             <Route path="*" element={"This Url is not Mapped"} />
             <Route path="/students/*" element={<div> <CrudOperations></CrudOperations></div>} />
             <Route path="redux-example" element={<ReduxStoreExample> </ReduxStoreExample>} />
+            <Route path="custom-hook" element={<CustomHook> </CustomHook>} />
 
           </Routes>
 
