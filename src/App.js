@@ -39,12 +39,12 @@ function App() {
   return (
     <div className="App">
 
-      <div className="Header  text-white">
+      {/* <div className="Header  text-white">
         <h2> App Component</h2>
-      </div>
+      </div> */}
 
-      <div className="container-body">
-        <div className="side-Bar">
+      {/* <div className="container-body"> */}
+      {/* <div className="side-Bar">
           <Link to={"/"}> <h5 className="text-center text-danger"> Home</h5></Link>
           <br />
           <Link to={"/counter"}><h5 className="text-center text-danger"> Counter </h5></Link>
@@ -69,10 +69,10 @@ function App() {
           <button className="btn btn-primary" onClick={() => {
             navigate("/hoc");
           }}> HOC </button>
-        </div>
+        </div> */}
 
 
-        <div className="Content">
+      {/* <div className="Content">
           <Routes>
             <Route path="/counter" element={<div><Counter> </Counter> </div>} />
             <Route path="/greeting" element={<div><Greetings name="Saurabh" greetings="Hello Good Morning"> </Greetings> </div>} />
@@ -83,11 +83,11 @@ function App() {
             <Route path="hoc" element={<AuthinticatedExampleComponent> </AuthinticatedExampleComponent>} />
           </Routes>
 
-        </div>
+        </div> */}
 
 
 
-        {/* <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -101,79 +101,86 @@ function App() {
           Learn React
         </a>
       </header> */}
-        {/* <p> This is App component.</p>
+      {/* <p> This is App component.</p>
       <h1 className="heading">
         <i> Welcome To React</i>{" "}
       </h1>
-      <hr></hr>
-      <p> This is Greeting component.</p>
+      <hr></hr> */}
+
+
+      {/* <p> This is Greeting component.</p>
+      <br />
       <h5>
         <Greetings name="Saurabh" greetings="Hello Good Morning"></Greetings>{" "}
       </h5>
-      <hr></hr>
-      <p> This is Counter component</p>
+      <hr></hr> */}
+
+
+      {/* <p> This is Counter component</p>
       <h5>
         <Counter counterName="Counter1"> </Counter>{" "}
       </h5>
-      <hr></hr>
-      {/* <h5><Counter counterName="Counter2"> </Counter> </h5> */}
-        {/* <hr></hr>
-      <p> This is Flag Component</p>
+      <hr></hr> */}
+      {/*       
+      <h5><Counter counterName="Counter2"> </Counter> </h5>
+        <hr></hr> */}
+
+      {/* <p> This is Flag Component</p>
       <Flag> </Flag>
 
       <hr></hr>
-      <ConditinalFlag> </ConditinalFlag> */}
-        {/* <hr></hr> */}
+      <ConditinalFlag> </ConditinalFlag>
+        <hr></hr> */}
 
-        {/* <UserProfile> </UserProfile> */}
-        {/* <hr></hr>*/}
+      {/* <UserProfile> </UserProfile>
+        <hr></hr> */}
 
-        {/* <ToDoLists> </ToDoLists> */}
-        {/* <hr></hr>  */}
+      {/* <ToDoLists> </ToDoLists>
+        <hr></hr>  */}
 
-        {/* <UserList> </UserList> */}
-        {/* <hr></hr> */}
+      {/* <UserList> </UserList>
+        <hr></hr> */}
+      
+        {/* <FormHandling> </FormHandling>
+        <hr></hr> */}
 
-        {/* <FormHandling> </FormHandling> */}
-        {/* <hr></hr> */}
-
-        {/* <FormikLibraryFormHandling> </FormikLibraryFormHandling> */}
-        {/* <hr></hr> */}
-
-        {/* <ImageCourosel> </ImageCourosel> */}
-        {/* <hr></hr> */}
-
-        {/* <StockAvailability> </StockAvailability> */}
-        {/* <hr></hr> */}
-
-        {/* <EmployeeListForm> </EmployeeListForm>
+      {/* <FormikLibraryFormHandling> </FormikLibraryFormHandling> 
       <hr></hr> */}
 
-        {/* <CrudOperations> </CrudOperations> */}
-        {/* <hr></hr> */}
+      {/* <ImageCourosel> </ImageCourosel>
+      <hr></hr> */}
 
-        {/* <TicTacToe></TicTacToe> */}
-        {/* <hr></h/r> */}
+      {/* <StockAvailability> </StockAvailability>
+      <hr></hr> */}
 
-        {/* <UseRefExample> </UseRefExample> */}
-        {/* <hr/> */}
+      {/* <EmployeeListForm> </EmployeeListForm>
+      <hr></hr> */}
 
-        {/* <UseMemoHook> </UseMemoHook> */}
+      {/* <CrudOperations> </CrudOperations>
+      <hr></hr> */}
 
-        {/* <UseCallbackHook> </UseCallbackHook> */}
+     {/*  <TicTacToe></TicTacToe>
+      <hr></hr> */}
 
-        {/* <ContextProvider>
-        <Profile></Profile>
+      {/* <UseRefExample> </UseRefExample>
+        <hr/> */}
+
+      {/* <UseMemoHook> </UseMemoHook> */}
+
+      {/* <UseCallbackHook> </UseCallbackHook> */}
+
+      {/* <ContextProvider>
+        <Profile> </Profile>
  
       </ContextProvider> */}
 
-        {/* <UseReducerHook> </UseReducerHook> */}
+      {/* <UseReducerHook> </UseReducerHook> */}
 
-        {/* <FormUseReducerExample></FormUseReducerExample> */}
+      {/* <FormUseReducerExample></FormUseReducerExample> */}
 
-        {/* <ReduxStoreExample> </ReduxStoreExample> */}
-      </div>
+       <ReduxStoreExample> </ReduxStoreExample>
     </div>
+    // </div>
   );
 }
 

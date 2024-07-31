@@ -74,7 +74,7 @@ export function CrudOperations() {
 
 
             </Routes>
-            {/* <StudentForm student={studentToBeUpdated} formSubmit={(value, id) => {
+            <StudentForm student={studentToBeUpdated} formSubmit={(value, id) => {
                 console.log(value);
                 const { fname, lastname, email, ContactNo, address, state } = value;
                 if (!fname || !lastname || !email || !ContactNo || !state || !address) {
@@ -101,16 +101,16 @@ export function CrudOperations() {
                     };
                     setStudentList([...studentList, newStudent]);
                 }
-            }}> </StudentForm> */}
+            }}> </StudentForm>
 
-            {/* <StudentsTable OnStudentUpdate={(student)=>{
+            <StudentsTable OnStudentUpdate={(student)=>{
                 setStudentToBeUpdated(student);
             }} studentList={studentList} onDelete={(id) => {
                 const bool = window.confirm("Do you want to delete?");
                 if (bool) {
                     onDelete(id)
                 }
-            }}></StudentsTable> */}
+            }}></StudentsTable>
 
 
         </div>
